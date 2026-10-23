@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.IO;
 using System.Net;
 using System.Runtime.InteropServices;
@@ -1446,13 +1446,11 @@ public partial class FormMain
         SetupAbout = 4,
         SetupLog = 5,
         SetupFeedback = 6,
-        SetupGameLink = 7,
         SetupUpdate = 8,
         SetupJava = 9,
         SetupLauncherMisc = 10,
         SetupLauncherLanguage = 11,
 
-        ToolsGameLink = 1,
         ToolsTest = 3,
 
         VersionOverall = 0,

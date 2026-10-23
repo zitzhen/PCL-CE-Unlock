@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
 using PCL.Core.App;
 
@@ -23,7 +23,6 @@ public partial class PageToolsLeft
         var isHiddenPage = false;
         var hide = Config.Preference.Hide;
 
-        if (ItemGameLink.Checked && hide.ToolsGameLink) isHiddenPage = true;
         if (ItemTest.Checked && hide.ToolsTest) isHiddenPage = true;
         if (PageSetupUI.HiddenForceShow)
             isHiddenPage = false;
@@ -36,13 +35,7 @@ public partial class PageToolsLeft
         // 选择第一个未被禁用的子页面
         if (isPageSwitched) 
             return;
-        var hideCfg = Config.Preference.Hide;
-        if (!hideCfg.ToolsGameLink)
-            ItemGameLink.SetChecked(true, false, false);
-        else if (!hideCfg.ToolsTest)
-            ItemTest.SetChecked(true, false, false);
-        else
-            ItemGameLink.SetChecked(true, false, false);
+        ItemTest.SetChecked(true, false, false);
     }
 
     private void PageOtherLeft_Unloaded(object sender, RoutedEventArgs e)
@@ -50,31 +43,12 @@ public partial class PageToolsLeft
         isPageSwitched = false;
     }
 
-    public void Refresh(object sender, EventArgs e)
-    {
-        var button = (MyIconButton)sender;
-        if (button.Tag is null)
-            return;
-        double id = ModBase.Val(button.Tag);
-        switch (id)
-        {
-            case (double)FormMain.PageSubType.ToolsGameLink:
-            {
-                if (ModMain.frmToolsGameLink is null)
-                    ModMain.frmToolsGameLink = new PageToolsGameLink();
-                ModMain.frmToolsGameLink.Reload();
-                ItemGameLink.Checked = true;
-                break;
-            }
-        }
-    }
-
     #region 页面切换
 
     /// <summary>
     ///     当前页面的编号。
     /// </summary>
-    public FormMain.PageSubType pageID = FormMain.PageSubType.ToolsGameLink;
+    public FormMain.PageSubType pageID = FormMain.PageSubType.ToolsTest;
 
     /// <summary>
     ///     勾选事件改变页面。
@@ -93,12 +67,6 @@ public partial class PageToolsLeft
         var targetID = id ?? pageID;
         switch (id)
         {
-            case FormMain.PageSubType.ToolsGameLink:
-            {
-                if (ModMain.frmToolsGameLink is null)
-                    ModMain.frmToolsGameLink = new PageToolsGameLink();
-                return ModMain.frmToolsGameLink;
-            }
             case FormMain.PageSubType.ToolsTest:
             {
                 if (ModMain.frmToolsTest is null)
