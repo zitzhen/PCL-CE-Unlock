@@ -151,7 +151,7 @@ public partial class PageSetupLeft
                 }
                 case 2:
                 {
-                    ModBase.OpenWebsite("https://github.com/PCL-Community/PCL2-CE/issues/");
+                    ModBase.OpenWebsite("https://github.com/zitzhen/PCL-CE-Unlock/issues/");
                     break;
                 }
             }
