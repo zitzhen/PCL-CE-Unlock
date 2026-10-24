@@ -110,35 +110,60 @@
                         <RowDefinition Height="45" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
                         <ColumnDefinition />
                         <ColumnDefinition Width="150" />
                     </Grid.ColumnDefinitions>
                     <local:MyListItem
                         Grid.Row="0"
+                        Grid.Column="1"
                         Margin="-5,0,15,0"
                         Info="{DynamicResource Setup.About.ThirdParty.Developer.Info}"
                         IsHitTestVisible="False"
                         Title="{DynamicResource Setup.About.ThirdParty.Developer.Name}" />
                     <local:MyListItem
                         Grid.Row="1"
+                        Grid.Column="1"
                         Margin="-5,0,15,0"
                         Info="{DynamicResource Setup.About.ThirdParty.Studio.Info}"
                         IsHitTestVisible="False"
                         Title="{DynamicResource Setup.About.ThirdParty.Studio.Name}" />
                     <local:MyButton
                         Grid.Row="0"
-                        Grid.Column="1"
+                        Grid.Column="2"
                         Height="35"
                         local:CustomEventService.EventData="https://liuxiaozhen.dev"
                         local:CustomEventService.EventType="OpenUrl"
                         Text="{DynamicResource Setup.About.ThirdParty.Developer.Website}" />
                     <local:MyButton
                         Grid.Row="1"
-                        Grid.Column="1"
+                        Grid.Column="2"
                         Height="35"
                         local:CustomEventService.EventData="https://zitzhen.cn"
                         local:CustomEventService.EventType="OpenUrl"
                         Text="{DynamicResource Setup.About.ThirdParty.Studio.Website}" />
+                    <Image
+                        Grid.Row="0"
+                        Margin="3"
+                        Source="/Plain Craft Launcher 2;component/Images/Heads/OliverLin.png">
+                        <Image.Clip>
+                            <EllipseGeometry
+                                Center="17 17"
+                                RadiusX="17"
+                                RadiusY="17" />
+                        </Image.Clip>
+                    </Image>
+                    <Image
+                        Grid.Row="1"
+                        Margin="3"
+                        Source="/Plain Craft Launcher 2;component/Images/Heads/ZITStudio.png">
+                        <Image.Clip>
+                            <EllipseGeometry
+                                Center="17 17"
+                                RadiusX="17"
+                                RadiusY="17" />
+                        </Image.Clip>
+                    </Image>
                 </Grid>
             </local:MyCard>
             <local:MyCard Margin="0,0,0,15" Title="{DynamicResource Setup.About.SpecialThanks.Title}">
