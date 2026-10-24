@@ -71,8 +71,6 @@ jobs:
           echo "base=$base" >> "$GITHUB_OUTPUT"
 
       - name: Generate changelog
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: git-cliff "${{ steps.range.outputs.base }}..v${{ inputs.version }}" -o CHANGELOG.md
 
       - name: Create or update release
