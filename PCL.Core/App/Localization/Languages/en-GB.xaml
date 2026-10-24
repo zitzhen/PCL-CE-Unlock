@@ -1469,8 +1469,8 @@
     <sys:String x:Key="Launch.Error.ExportScriptTitle">Failed to export launch script</sys:String>
     <sys:String x:Key="Launch.Error.OperationFailed">A launch page operation failed. See the details below.</sys:String>
     <sys:String x:Key="Launch.Error.Title">Launch failed</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.HidePrompt">To permanently hide this notice, enter the correct PCL CE development organisation name.</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.InputTitle">Enter the PCL CE development organisation name</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.HidePrompt">To permanently hide this notice, enter the correct development organisation name: ZIT Studio.</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.InputTitle">Enter the development organisation name</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.Message">You are using PCL CE (ZIT Studio Unlock Mod)! This build is an independent third-party modification by ZIT Studio based on PCL CE, and is not affiliated with the original PCL or PCL CE.&#xA;&#xA;This build removes region-restricted features and pages. Please report issues to this project's repository, not to the original PCL or PCL CE repositories.&#xA;&#xA;If you downloaded this build by accident, we still recommend using the original PCL for long-term use.</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.Title">PCL CE (ZIT Studio Unlock Mod) notice</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.WrongInput">Not quite right...</sys:String>

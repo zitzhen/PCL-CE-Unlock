@@ -1513,8 +1513,8 @@
     <sys:String x:Key="Launch.Error.ExportScriptTitle">导出启动脚本失败</sys:String>
     <sys:String x:Key="Launch.Error.OperationFailed">启动页操作失败。请查看错误详情。</sys:String>
     <sys:String x:Key="Launch.Error.Title">启动失败</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.HidePrompt">若要永久隐藏此提示，请输入正确的 PCL CE 开发组织名称。</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.InputTitle">输入 PCL CE 开发组织名称</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.HidePrompt">若要永久隐藏此提示，请输入正确的开发组织名称：ZIT Studio。</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.InputTitle">输入开发组织名称</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.Message">你正在使用 PCL CE（ZIT Studio Unlock 修改版）！本版本由 ZIT Studio 基于 PCL CE 独立进行第三方二次修改，与原版 PCL 及 PCL CE 均无从属关系。&#xA;&#xA;本版本移除了地区限制相关的功能与页面。遇到问题请向本项目的仓库提交 Issue，不要向原版或 PCL CE 的仓库反馈。&#xA;&#xA;如果你是意外下载到此版本，我们仍建议下载原版 PCL 长期使用。</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.Title">PCL CE（ZIT Studio Unlock 修改版）提示</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.WrongInput">不太对哦……</sys:String>

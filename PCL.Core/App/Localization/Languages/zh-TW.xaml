@@ -1469,8 +1469,8 @@
     <sys:String x:Key="Launch.Error.ExportScriptTitle">匯出啟動指令碼失敗</sys:String>
     <sys:String x:Key="Launch.Error.OperationFailed">啟動頁操作失敗。請檢視錯誤詳情。</sys:String>
     <sys:String x:Key="Launch.Error.Title">啟動失敗</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.HidePrompt">若要永久隱藏此提示，請輸入正確的 PCL CE 開發組織名稱。</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.InputTitle">輸入 PCL CE 開發組織名稱</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.HidePrompt">若要永久隱藏此提示，請輸入正確的開發組織名稱：ZIT Studio。</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.InputTitle">輸入開發組織名稱</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.Message">你正在使用 PCL CE（ZIT Studio Unlock 修改版）！本版本由 ZIT Studio 基於 PCL CE 獨立進行第三方二次修改，與原版 PCL 及 PCL CE 均無隸屬關係。&#xA;&#xA;本版本移除了地區限制相關的功能與頁面。遇到問題請向本專案的儲存庫提交 Issue，不要向原版或 PCL CE 的儲存庫回饋。&#xA;&#xA;如果你是意外下載到此版本，我們仍建議下載原版 PCL 長期使用。</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.Title">PCL CE（ZIT Studio Unlock 修改版）提示</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.WrongInput">不太對哦……</sys:String>
