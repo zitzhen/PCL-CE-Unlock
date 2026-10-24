@@ -103,6 +103,44 @@
                         Text="{DynamicResource Setup.About.SourceCode}" />
                 </Grid>
             </local:MyCard>
+            <local:MyCard Margin="0,0,0,15" Title="{DynamicResource Setup.About.ThirdParty.Title}">
+                <Grid Margin="21,40,21,16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="45" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="150" />
+                    </Grid.ColumnDefinitions>
+                    <local:MyListItem
+                        Grid.Row="0"
+                        Margin="-5,0,15,0"
+                        Info="{DynamicResource Setup.About.ThirdParty.Developer.Info}"
+                        IsHitTestVisible="False"
+                        Title="{DynamicResource Setup.About.ThirdParty.Developer.Name}" />
+                    <local:MyListItem
+                        Grid.Row="1"
+                        Margin="-5,0,15,0"
+                        Info="{DynamicResource Setup.About.ThirdParty.Studio.Info}"
+                        IsHitTestVisible="False"
+                        Title="{DynamicResource Setup.About.ThirdParty.Studio.Name}" />
+                    <local:MyButton
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Height="35"
+                        local:CustomEventService.EventData="https://liuxiaozhen.dev"
+                        local:CustomEventService.EventType="OpenUrl"
+                        Text="{DynamicResource Setup.About.ThirdParty.Developer.Website}" />
+                    <local:MyButton
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Height="35"
+                        local:CustomEventService.EventData="https://zitzhen.cn"
+                        local:CustomEventService.EventType="OpenUrl"
+                        Text="{DynamicResource Setup.About.ThirdParty.Studio.Website}" />
+                </Grid>
+            </local:MyCard>
             <local:MyCard Margin="0,0,0,15" Title="{DynamicResource Setup.About.SpecialThanks.Title}">
                 <Grid Margin="21,40,21,16">
                     <Grid.RowDefinitions>

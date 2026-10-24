@@ -2566,6 +2566,16 @@
     <sys:String x:Key="Setup.About.Legal.PrivacyText">The User Agent of this software includes the launcher version number to count the number of users on each version.&#xD;Other than this, this software will not upload any other information to the developers.&#xD;* Online and hardware/software survey features follow their own privacy policies, which are separate from this notice.</sys:String>
     <sys:String x:Key="Setup.About.Legal.Title">Legal information</sys:String>
 
+    <!-- Setup.About.ThirdParty -->
+
+    <sys:String x:Key="Setup.About.ThirdParty.Title">Development &amp; Copyright</sys:String>
+    <sys:String x:Key="Setup.About.ThirdParty.Developer.Name">Oliver Lin</sys:String>
+    <sys:String x:Key="Setup.About.ThirdParty.Developer.Info">Core developer, GitHub @iamliuxiaozhen · liuxiaozhen.dev</sys:String>
+    <sys:String x:Key="Setup.About.ThirdParty.Developer.Website">Personal website</sys:String>
+    <sys:String x:Key="Setup.About.ThirdParty.Studio.Name">ZIT Studio</sys:String>
+    <sys:String x:Key="Setup.About.ThirdParty.Studio.Info">Development studio of this derivative build, GitHub @zitzhen · zitzhen.cn</sys:String>
+    <sys:String x:Key="Setup.About.ThirdParty.Studio.Website">Studio website</sys:String>
+
     <!-- Setup.About.SpecialThanks -->
 
     <sys:String x:Key="Setup.About.SpecialThanks.GoBlog">Blog</sys:String>

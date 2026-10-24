@@ -2566,6 +2566,16 @@
     <sys:String x:Key="Setup.About.Legal.PrivacyText">本软件的 User Agent 中包含启动器的版本号，以统计各版本的用户数量。&#xD;除此之外，本软件不会向开发者上传任何其他信息。&#xD;* 联机与软硬件调查相关功能遵循其自身的隐私政策，与上述说明不通用。</sys:String>
     <sys:String x:Key="Setup.About.Legal.Title">版权声明与法律信息</sys:String>
 
+    <!-- Setup.About.ThirdParty -->
+
+    <sys:String x:Key="Setup.About.ThirdParty.Title">开发与版权</sys:String>
+    <sys:String x:Key="Setup.About.ThirdParty.Developer.Name">Oliver Lin</sys:String>
+    <sys:String x:Key="Setup.About.ThirdParty.Developer.Info">核心开发者，GitHub @iamliuxiaozhen · liuxiaozhen.dev</sys:String>
+    <sys:String x:Key="Setup.About.ThirdParty.Developer.Website">个人主页</sys:String>
+    <sys:String x:Key="Setup.About.ThirdParty.Studio.Name">ZIT Studio</sys:String>
+    <sys:String x:Key="Setup.About.ThirdParty.Studio.Info">本衍生版本的开发工作室，GitHub @zitzhen · zitzhen.cn</sys:String>
+    <sys:String x:Key="Setup.About.ThirdParty.Studio.Website">工作室官网</sys:String>
+
     <!-- Setup.About.SpecialThanks -->
 
     <sys:String x:Key="Setup.About.SpecialThanks.GoBlog">转到博客</sys:String>
