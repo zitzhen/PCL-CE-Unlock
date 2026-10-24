@@ -10,7 +10,7 @@
 [上游儲存庫](https://github.com/Meloong-Git/PCL)
 
 [提交問題](https://github.com/zitzhen/PCL-CE-Unlock/issues/new/choose) |
-[貢獻指南](https://github.com/PCL-Community/PCL-CE/wiki/开发指南)
+[貢獻指南](CONTRIBUTING.md)
 
 </div>
 

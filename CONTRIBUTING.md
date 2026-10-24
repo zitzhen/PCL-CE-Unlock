@@ -1,35 +1,36 @@
 # 如何为项目做贡献
 
-Wiki 页面:
-[开发指南](https://github.com/PCL-Community/PCL2-CE/wiki/开发指南)
-[技术规范](https://github.com/PCL-Community/PCL2-CE/wiki/技术规范)
+本仓库是 ZIT Studio 基于 [PCL CE](https://github.com/PCL-Community/PCL-CE) 开源代码进行的第三方二次修改版，
+并非 PCL、PCL CE 官方仓库。**所有与本修改版相关的问题与改动，请提交到本仓库，不要提交给上游。**
 
-<details>
-
-<summary>原 CONTRIBUTING.md 内容</summary>
+- 仓库地址：[zitzhen/PCL-CE-Unlock](https://github.com/zitzhen/PCL-CE-Unlock)
+- 上游项目：[PCL CE](https://github.com/PCL-Community/PCL-CE) / [PCL](https://github.com/Meloong-Git/PCL)
 
 ## 开始之前
 
-查看 [Issues](https://github.com/PCL-Community/PCL2-CE/issues) 寻找可以参与的任务，或创建新 Issue 讨论您的想法。
+查看 [Issues](https://github.com/zitzhen/PCL-CE-Unlock/issues) 寻找可以参与的任务，或创建新 Issue 讨论你的想法。
 
 ## 贡献流程
 
 ### 报告问题
 
 1. 在提交 Issue 前，请先搜索是否已有相关 Issue
-2. 使用提供的 Issue 模板
+2. 使用本仓库提供的 Issue 模板（综合 Bug 反馈 / 游戏崩溃 / 改进建议）
 3. 包含以下信息：
    - 清晰的问题描述
    - 复现步骤（包括环境信息）
    - 预期与实际行为对比
    - 相关日志/截图（如有）
 
+> 反馈问题时请使用本修改版的日志（`设置 → 查看日志 → 导出日志`），
+> 并在描述中说明你使用的是本修改版，而不是原版 PCL 或 PCL CE。
+
 ### 提交代码
 
-1. Fork 仓库并克隆到本地
+1. Fork 本仓库并克隆到本地
 
    ```bash
-   git clone https://github.com/你的用户名/项目名称.git
+   git clone https://github.com/<你的用户名>/PCL-CE-Unlock.git
    ```
 
 2. 创建你的分支
@@ -54,15 +55,40 @@ Wiki 页面:
    ```
 
 6. 创建 Pull Request
-   - 指向上游仓库的 `dev` 分支
+   - 指向本仓库的 `main` 分支
    - 详细填写 PR 信息
    - 关联 Issue（如有）
 
 ## 开发规范
 
-### 测试要求
+### 环境准备
 
-- 提交前请在本地编译通过确保无误后提交
+- [.NET 10 SDK](https://get.dot.net/10)
+- Visual Studio 2022 或更高版本 / JetBrains Rider / VS Code
+
+### 构建与测试
+
+提交前请在本地编译通过：
+
+```bash
+dotnet build "Plain Craft Launcher 2.slnx"
+```
+
+需要运行调试时，请先关闭已经在运行的启动器进程，否则会因 `PCL.Core.dll` 被占用而导致生成失败。
+
+### 代码风格
+
+- 遵循 [.editorconfig](.editorconfig) 中定义的缩进、换行等格式约定
+- 保持与现有代码一致的命名与目录结构
+- 不要提交与本次改动无关的格式化改动
+
+### 合规模块（重要）
+
+`Plain Craft Launcher 2/` 目录受[自定义许可证](Plain%20Craft%20Launcher%202/LICENCE)约束，贡献时请确保：
+
+- 保留该 LICENCE 文件，不删除原作者（龙腾猫跃）与 PCL Community 的署名、赞助链接
+- 不添加“赞助解锁”类功能或任何暗示官方提供的内容（名称、Logo、界面主色相也需符合要求）
+- 涉及启动器名称、更新源、反馈入口的改动，需与当前修改版定位保持一致
 
 ### Angular 规范
 
@@ -156,6 +182,7 @@ revert:<type>(<scope>): <subject>
 
 ## 提交上游
 
-若你要将他人在 CE 中实现的功能或修复提交到上游，请用 Co-authored 来指明原始贡献者
+本仓库的改动默认只面向本修改版。
 
-</details>
+若你想将某个功能或修复回馈给上游 PCL CE，请提交到[上游仓库](https://github.com/PCL-Community/PCL-CE)，
+并用 `Co-authored-by` 指明原始贡献者。

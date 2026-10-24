@@ -10,7 +10,7 @@
 [Upstream repo](https://github.com/Meloong-Git/PCL)
 
 [Submit issues](https://github.com/zitzhen/PCL-CE-Unlock/issues/new/choose) |
-[Contribution Guidelines](https://github.com/PCL-Community/PCL-CE/wiki/开发指南)
+[Contribution Guidelines](CONTRIBUTING.md)
 
 </div>
 
