@@ -2,7 +2,6 @@ name: Release publish
 
 permissions:
   contents: write
-  actions: write
 
 on:
   workflow_dispatch:
@@ -19,6 +18,11 @@ on:
         description: 'Version to release (e.g., 2.14.2)'
         required: true
         type: string
+      draft:
+        description: 'Keep the release as a draft'
+        required: true
+        default: true
+        type: boolean
 
 jobs:
   build:
@@ -53,15 +57,28 @@ jobs:
       - name: Create local release tag
         run: git tag -f "v${{ inputs.version }}"
 
+      - name: Determine changelog range
+        id: range
+        # 只统计本仓库自己的提交，不把上游 PCL CE 的历史改动写进更新说明。
+        # FORK_BASE 是分叉时上游的最后一个提交；若之后合并了上游分支，把它更新为合并前上游的最后一个提交。
+        env:
+          FORK_BASE: 8f0beaf9
+        run: |
+          base=$(git describe --tags --match "v[0-9]*" --abbrev=0 HEAD^ 2>/dev/null || true)
+          if [ -z "$base" ] || ! git merge-base --is-ancestor "$FORK_BASE" "$base"; then
+            base="$FORK_BASE"
+          fi
+          echo "base=$base" >> "$GITHUB_OUTPUT"
+
       - name: Generate changelog
-        run: git-cliff --latest -o CHANGELOG.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: git-cliff "${{ steps.range.outputs.base }}..v${{ inputs.version }}" -o CHANGELOG.md
 
       - name: Create or update release
         uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
         with:
-          draft: true
+          draft: ${{ inputs.draft }}
           tag_name: v${{ inputs.version }}
           name: Release ${{ inputs.version }}
           body_path: CHANGELOG.md
@@ -105,19 +122,10 @@ jobs:
       - name: Upload binary and signature to Release
         uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
         with:
-          draft: true
+          draft: ${{ inputs.draft }}
           tag_name: v${{ inputs.version }}
           files: |
             PCL_CE_ZIT_Studio_Unlock_${{ matrix.configuration }}_${{ matrix.architecture }}.exe
             PCL_CE_ZIT_Studio_Unlock_${{ matrix.configuration }}_${{ matrix.architecture }}.exe.sigstore.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  publish_draft:
-    needs: [rename_and_release]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Publish Draft
-        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
-        with:
-          tag_name: v${{ inputs.version }}
