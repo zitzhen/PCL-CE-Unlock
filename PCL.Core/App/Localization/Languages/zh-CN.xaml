@@ -3586,9 +3586,9 @@
     <sys:String x:Key="Update.Action">更新</sys:String>
     <sys:String x:Key="Update.Available">启动器有新版本可用（{0} -&gt; {1}）&#xA;是否立即更新？</sys:String>
     <sys:String x:Key="Update.Check.Failed">无法获取最新版本信息，请检查网络连接</sys:String>
-    <sys:String x:Key="Update.CommunityNotice.Body">你正在使用来自 PCL-Community 的 PCL CE，遇到问题请不要向原版仓库反馈！&#xA;PCL-Community 及其成员与龙腾猫跃无从属关系，且均不会为您的使用做担保。&#xA;&#xA;如果你是意外下载的 PCL CE，建议下载原版 PCL 使用。&#xA;如果你是意外下载的 PCL CE，建议下载原版 PCL 使用。&#xA;如果你是意外下载的 PCL CE，建议下载原版 PCL 使用。&#xA;&#xA;该版本与原版的特性区别：&#xA;- 主题切换：仅部分固定蓝色系主题，没有计划新增其它主题。&#xA;- 百宝箱：缺失部分原版中的内容（回声洞、千万别点）。&#xA;&#xA;此提示会在启动器更新后展示一次。</sys:String>
+    <sys:String x:Key="Update.CommunityNotice.Body">你正在使用由 ZIT Studio 基于 PCL CE 制作的 PCL CE（ZIT Studio Unlock 修改版），这是一个第三方二次修改版本，并非 PCL 或 PCL CE 官方发布。&#xA;遇到问题请前往本仓库反馈：https://github.com/zitzhen/PCL-CE-Unlock/issues&#xA;ZIT Studio 与龙腾猫跃、PCL-Community 均无隶属关系，也不会为您的使用做担保。&#xA;&#xA;如果你是意外下载的此版本，建议使用原版 PCL：https://github.com/Meloong-Git/PCL&#xA;&#xA;该版本在 PCL CE 社区版基础上移除了地区限制相关的功能与页面。&#xA;&#xA;此提示会在启动器更新后展示一次。</sys:String>
     <sys:String x:Key="Update.CommunityNotice.Confirm">我知道了</sys:String>
-    <sys:String x:Key="Update.CommunityNotice.Title">PCL CE 版本说明</sys:String>
+    <sys:String x:Key="Update.CommunityNotice.Title">PCL CE（ZIT Studio Unlock 修改版）版本说明</sys:String>
     <sys:String x:Key="Update.Error.FetchFailed">获取启动器更新失败，请检查网络连接</sys:String>
     <sys:String x:Key="Update.Error.FileNotFound">找不到更新文件</sys:String>
     <sys:String x:Key="Update.Error.OperationFailed">更新操作失败。请查看错误详情。</sys:String>

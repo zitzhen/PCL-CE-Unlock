@@ -3530,9 +3530,9 @@
     <sys:String x:Key="Update.Action">更新</sys:String>
     <sys:String x:Key="Update.Available">啟動器有新版本可用（{0} -&gt; {1}）&#xA;是否立即更新？</sys:String>
     <sys:String x:Key="Update.Check.Failed">無法取得最新版本資訊，請檢查網路連線</sys:String>
-    <sys:String x:Key="Update.CommunityNotice.Body">你正在使用來自 PCL-Community 的 PCL CE，遇到問題請不要向原版儲存庫回饋！&#xA;PCL-Community 及其成員與龍騰貓躍無從屬關係，且均不會為您的使用做擔保。&#xA;&#xA;如果你是意外下載的 PCL CE，建議下載原版 PCL 使用。&#xA;如果你是意外下載的 PCL CE，建議下載原版 PCL 使用。&#xA;如果你是意外下載的 PCL CE，建議下載原版 PCL 使用。&#xA;&#xA;該版本與原版的特性區別：&#xA;- 主題切換：僅部分固定藍色系主題，沒有計劃新增其他主題。&#xA;- 百寶箱：缺失部分原版中的內容（回聲洞、千萬別點）。&#xA;&#xA;此提示會在啟動器更新後展示一次。</sys:String>
+    <sys:String x:Key="Update.CommunityNotice.Body">你正在使用由 ZIT Studio 基於 PCL CE 製作的 PCL CE（ZIT Studio Unlock 修改版），這是一個第三方二次修改版本，並非 PCL 或 PCL CE 官方發佈。&#xA;遇到問題請前往本儲存庫回饋：https://github.com/zitzhen/PCL-CE-Unlock/issues&#xA;ZIT Studio 與龍騰貓躍、PCL-Community 均無隸屬關係，也不會為您的使用做擔保。&#xA;&#xA;如果你是意外下載的此版本，建議使用原版 PCL：https://github.com/Meloong-Git/PCL&#xA;&#xA;該版本在 PCL CE 社群版基礎上移除了地區限制相關的功能與頁面。&#xA;&#xA;此提示會在啟動器更新後展示一次。</sys:String>
     <sys:String x:Key="Update.CommunityNotice.Confirm">我知道了</sys:String>
-    <sys:String x:Key="Update.CommunityNotice.Title">PCL CE 版本說明</sys:String>
+    <sys:String x:Key="Update.CommunityNotice.Title">PCL CE（ZIT Studio Unlock 修改版）版本說明</sys:String>
     <sys:String x:Key="Update.Error.FetchFailed">取得啟動器更新失敗，請檢查網路連線</sys:String>
     <sys:String x:Key="Update.Error.FileNotFound">找不到更新檔案</sys:String>
     <sys:String x:Key="Update.Error.OperationFailed">更新操作失敗。請檢視錯誤詳情。</sys:String>
