@@ -1515,8 +1515,8 @@
     <sys:String x:Key="Launch.Error.Title">Launch failed</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.HidePrompt">To permanently hide this notice, enter the correct PCL CE development organization name.</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.InputTitle">Enter the PCL CE development organization name</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.Message">You are using PCL CE (PCL Community Edition)! This version is independently developed and maintained, and differs from the original version in its development path and user experience.&#xA;&#xA;If you downloaded the PCL CE by accident, we strongly recommend downloading the original PCL version for long-term use, as this distribution may not be user-friendly for newcomers.&#xA;Additionally, please submit PCL CE issues to the PCL CE repository, and do not report PCL CE issues to the original repository!</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.Title">PCL CE notice</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.Message">You are using PCL CE (ZIT Studio Unlock Mod)! This build is an independent third-party modification by ZIT Studio based on PCL CE, and is not affiliated with the original PCL or PCL CE.&#xA;&#xA;This build removes region-restricted features and pages. Please report issues to this project's repository, not to the original PCL or PCL CE repositories.&#xA;&#xA;If you downloaded this build by accident, we still recommend using the original PCL for long-term use.</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.Title">PCL CE (ZIT Studio Unlock Mod) notice</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.WrongInput">Not quite right...</sys:String>
     <sys:String x:Key="Launch.Right.Log.Title">Launch log</sys:String>
 
