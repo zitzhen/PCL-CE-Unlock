@@ -101,9 +101,8 @@ public sealed partial class ThemeService
 
     private static void _AprilFoolLogic()
     {
-        // for HMCL theme on April Fools' Day
+        // HMCL 主题现在可自由选择，不再因非愚人节而被重置
         if (Basics.IsAprilFool) Config.Preference.WindowTitleTypeConfig.TriggerEvent(ConfigEvent.Changed, null);
-        else if (CurrentTheme == ColorTheme.HmclBlue) CurrentTheme = ColorTheme.CatBlue;
     }
 
     /// <summary>
@@ -157,6 +156,13 @@ public sealed partial class ThemeService
             ColorTheme.CatBlue => (255, 0, -0.2),
             ColorTheme.DeathBlue => (268, -0.05, -0.1),
             ColorTheme.HmclBlue => (275, -0.03, -0.35),
+            ColorTheme.ForestGreen => (135, 0.1, 0.1),
+            ColorTheme.CherryRed => (20, 0, 0),
+            ColorTheme.SunsetOrange => (50, 0.05, 0.1),
+            ColorTheme.RoyalPurple => (290, 0, -0.1),
+            ColorTheme.GoldYellow => (85, 0.15, 0.15),
+            ColorTheme.TealCyan => (185, 0.1, 0.05),
+            ColorTheme.RosePink => (335, 0.1, 0),
 #if DEBUG
             _ => ((int)theme, 0, 0)
 #else

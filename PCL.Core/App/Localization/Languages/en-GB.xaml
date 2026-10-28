@@ -3173,6 +3173,13 @@
     <sys:String x:Key="Setup.Ui.Theme.Color.CrashBlue">Crash Blue</sys:String>
     <sys:String x:Key="Setup.Ui.Theme.Color.Hmcl">HMCL</sys:String>
     <sys:String x:Key="Setup.Ui.Theme.Color.SkyBlue">Sky Blue</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.ForestGreen">Forest Green</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.CherryRed">Cherry Red</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.SunsetOrange">Sunset Orange</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.RoyalPurple">Royal Purple</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.GoldYellow">Gold Yellow</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.TealCyan">Teal Cyan</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.RosePink">Rose Pink</sys:String>
     <sys:String x:Key="Setup.Ui.Theme.Dark">Dark</sys:String>
     <sys:String x:Key="Setup.Ui.Theme.DarkColor">Dark theme colour</sys:String>
     <sys:String x:Key="Setup.Ui.Theme.DarkColor.ToolTip">Default theme colour in dark mode</sys:String>

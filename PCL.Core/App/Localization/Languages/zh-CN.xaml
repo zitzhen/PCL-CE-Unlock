@@ -3229,6 +3229,13 @@
     <sys:String x:Key="Setup.Ui.Theme.Color.CrashBlue">死机蓝</sys:String>
     <sys:String x:Key="Setup.Ui.Theme.Color.Hmcl">HMCL</sys:String>
     <sys:String x:Key="Setup.Ui.Theme.Color.SkyBlue">天空蓝</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.ForestGreen">森林绿</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.CherryRed">樱桃红</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.SunsetOrange">日落橙</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.RoyalPurple">皇家紫</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.GoldYellow">金黄</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.TealCyan">青色</sys:String>
+    <sys:String x:Key="Setup.Ui.Theme.Color.RosePink">玫瑰粉</sys:String>
     <sys:String x:Key="Setup.Ui.Theme.Dark">深色</sys:String>
     <sys:String x:Key="Setup.Ui.Theme.DarkColor">深色配色</sys:String>
     <sys:String x:Key="Setup.Ui.Theme.DarkColor.ToolTip">在深色模式下默认的主题配色</sys:String>

@@ -12,9 +12,20 @@ namespace PCL;
 
 public partial class PageSetupUI
 {
-    public string[] ThemeColors => Basics.IsAprilFool 
-        ? [Lang.Text("Setup.Ui.Theme.Color.SkyBlue"), Lang.Text("Setup.Ui.Theme.Color.CatBlue"), Lang.Text("Setup.Ui.Theme.Color.CrashBlue"), Lang.Text("Setup.Ui.Theme.Color.Hmcl")]
-        : [Lang.Text("Setup.Ui.Theme.Color.SkyBlue"), Lang.Text("Setup.Ui.Theme.Color.CatBlue"), Lang.Text("Setup.Ui.Theme.Color.CrashBlue")];
+    public string[] ThemeColors =>
+    [
+        Lang.Text("Setup.Ui.Theme.Color.SkyBlue"),
+        Lang.Text("Setup.Ui.Theme.Color.CatBlue"),
+        Lang.Text("Setup.Ui.Theme.Color.CrashBlue"),
+        Lang.Text("Setup.Ui.Theme.Color.Hmcl"),
+        Lang.Text("Setup.Ui.Theme.Color.ForestGreen"),
+        Lang.Text("Setup.Ui.Theme.Color.CherryRed"),
+        Lang.Text("Setup.Ui.Theme.Color.SunsetOrange"),
+        Lang.Text("Setup.Ui.Theme.Color.RoyalPurple"),
+        Lang.Text("Setup.Ui.Theme.Color.GoldYellow"),
+        Lang.Text("Setup.Ui.Theme.Color.TealCyan"),
+        Lang.Text("Setup.Ui.Theme.Color.RosePink")
+    ];
     
     public new bool isLoaded;
 
@@ -41,7 +52,7 @@ public partial class PageSetupUI
 
         SliderLoad();
 
-        PanLauncherHide.Visibility = Visibility.Visible;
+        PanLauncherHide.Visibility = Visibility.Collapsed;
     }
 
     public void Reload()
