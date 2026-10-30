@@ -69,7 +69,7 @@
                         <local:MyImage x:Name="ImgUpdateIcon" Source="pack://application:,,,/Images/icon.png"
                                        Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Height="50" Width="50"
                                        HorizontalAlignment="Left" VerticalAlignment="Center" />
-                        <TextBlock x:Name="TextUpdateName" Text="PCL CE（ZIT Studio Unlock 修改版） 1.3.0" FontWeight="Bold" FontSize="20"
+                        <TextBlock x:Name="TextUpdateName" Text="PCL CE（ZIT Studio Unlock 修改版） 1.3.1" FontWeight="Bold" FontSize="20"
                                    Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
                         <TextBlock x:Name="TextUpdateDesc" Text="by ZIT Studio" FontSize="14" Grid.Row="2"
                                    Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" />
